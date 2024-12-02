@@ -1,0 +1,43 @@
+body{
+    background-image: url("galaxy\ background.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; 
+}
+.sun{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+
+
+.loader{
+    
+    width:500px;
+    height: 500px;
+    border: 6px solid #f3f3f3; /*light white*/
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spainAnimation 3s ease-in-out 1s infinite normal;
+}
+@keyframes spainAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+
+    }
+}
